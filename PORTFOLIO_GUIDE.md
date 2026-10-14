@@ -13,7 +13,7 @@ Keep the featured collection selective. Replace weaker entries as stronger indep
 
 ## Recommended profile setup
 
-The main overview is ready in [PORTFOLIO.md](PORTFOLIO.md). A GitHub profile README requires a public repository named exactly **Ridwat**, containing **README.md**. Copy the overview there when that repository is available; keep template and guide links pointing to this repository or copy those files too.
+The main overview is ready in [PORTFOLIO.md](PORTFOLIO.md). A GitHub profile README requires a public repository named exactly **Ridwat**, containing **README.md**. Copy the ready-to-use [PROFILE_README.md](PROFILE_README.md) into that repository as `README.md`. Its supporting links already use full URLs and work from the profile repository. When updating the overview, keep `PORTFOLIO.md` and `PROFILE_README.md` aligned.
 
 Recommended six pins:
 - Ethical-AI-Analysis
