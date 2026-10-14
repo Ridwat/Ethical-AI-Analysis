@@ -56,6 +56,16 @@ An AI-enabled request-intake and workflow assistant being designed around busine
 
 This project will join the completed showcase when its implementation, demo, and validation are available.
 
+### AI Stylist
+
+**Status: Planned · Independent AI application**
+
+An AI styling assistant concept for helping users explore outfit ideas and styling recommendations.
+
+**Intended focus:** User needs · Recommendation workflows · Personalization · AI output evaluation
+
+The detailed scope, implementation, and validation will be documented as the project develops.
+
 ---
 
 ## Featured work
