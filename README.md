@@ -1,120 +1,46 @@
-# Fairness and Explainability in Income Classification
+# Responsible AI: Fairness & Explainability in Income Classification
 
-This project builds, evaluates, and interprets a Logistic Regression model on the Adult Income dataset, with a focus on **fairness** and **explainable AI**.
+**Adetola Ridwat Odulaja** · Academic responsible AI project
 
----
+Evaluate an income classifier beyond aggregate accuracy by examining group-level outcomes and explaining individual predictions.
 
-## 🎯 Objectives
+**Focus:** Responsible AI · Model evaluation · Fairness analysis · Explainability
 
-- Load and preprocess a public dataset suitable for fairness analysis  
-- Train a binary classifier (Logistic Regression) to predict income (`<=50K` vs `>50K`)  
-- Evaluate model performance with traditional metrics  
-- Assess fairness across a sensitive attribute (**sex**) using Fairlearn  
-- Explain model behaviour using **SHAP** (global & local) and **LIME** (local)
+## Question
 
----
+Does a model with good overall accuracy behave similarly across groups, and which features influence its decisions?
 
-## 📂 Dataset
+## Approach
 
-- **Name:** Adult Income (UCI Machine Learning Repository)  
-- **Source URL:** `https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data`  
-- **Target variable:** `income` (`<=50K`, `>50K`)  
-- **Sensitive feature:** `sex` (Female, Male)  
+The notebook uses the UCI Adult Income dataset, one-hot encoding, a stratified 70/30 train/test split, and scaling fitted on training data. Logistic Regression predicts whether recorded income exceeds $50,000. Fairlearn compares selection, false-positive, and true-positive rates by recorded sex. SHAP and LIME explain model behavior globally and locally.
 
-Key features used include:
-- Demographics: `age`, `race`, `sex`, `marital-status`  
-- Socioeconomic: `education`, `education-num`, `workclass`, `occupation`, `hours-per-week`  
-- Financial: `capital-gain`, `capital-loss`  
+## Recorded results
 
-Categorical features are one-hot encoded; numerical features are standardized.
+The saved run reports **85.37% accuracy** on 9,769 test records. Recall for the higher-income class is approximately 61%.
 
----
+| Recorded group | Selection rate | False-positive rate | True-positive rate |
+|---|---:|---:|---:|
+| Female | 8.47% | 2.50% | 55.87% |
+| Male | 25.60% | 9.70% | 62.09% |
 
-## 🧠 Model
+These differences warrant investigation. They do not, by themselves, establish the cause of disparities or determine whether a model is fair for a particular use.
 
-- **Algorithm:** Logistic Regression (`sklearn.linear_model.LogisticRegression`)  
-- **Train/test split:** 70% train, 30% test (`train_test_split`, `stratify=y`)  
-- **Scaling:** `StandardScaler` applied to all features after one-hot encoding  
+## Why it matters
 
-### Performance
+An overall score can conceal unequal error patterns. This project demonstrates the value of combining performance metrics, group comparisons, and explanations when documenting AI risks and communicating findings to stakeholders.
 
-On the test set:
+## Explore the work
 
-- **Accuracy:** ~0.854  
-- **Class 0 (<=50K)**  
-  - Precision: 0.88  
-  - Recall: 0.93  
-  - F1-score: 0.91  
-- **Class 1 (>50K)**  
-  - Precision: 0.74  
-  - Recall: 0.61  
-  - F1-score: 0.67  
+- [Executed notebook](Ethical_AI_Analysis_and_Explainability.ipynb)
+- [Submitted report](Ethical%20AI%20Analysis.pdf)
+- [Full portfolio](PORTFOLIO.md)
 
-Confusion Matrix:
+## Run
 
-\[
-\begin{bmatrix}
-6902 & 515 \\
-914  & 1438
-\end{bmatrix}
-\]
+Open the notebook in Google Colab and run sequentially. It downloads Adult data from the URL embedded in the notebook and installs Fairlearn, SHAP, and LIME. Other dependencies include Pandas, NumPy, scikit-learn, and Matplotlib.
 
-The model performs better on the majority class (`<=50K`) than on the minority class (`>50K`).
+## Limitations
 
----
+This is an academic analysis of historical data. Sensitive attributes remain among the model inputs. Fairness is examined along one attribute, and explanation tools do not establish causality or fairness. Missing-value parsing should be checked: the saved sample counts retain all 32,561 source records despite a drop-missing step. No fairness mitigation, approval for operational use, or production deployment is established.
 
-## ⚖️ Fairness Analysis
-
-We use **Fairlearn** to evaluate fairness across the sensitive attribute **sex** (`0 = Female`, `1 = Male`), using:
-
-- `selection_rate`
-- `false_positive_rate`
-- `true_positive_rate`
-
-Example MetricFrame results on the test set:
-
-| sex | selection_rate | false_positive_rate | true_positive_rate |
-|-----|----------------|---------------------|--------------------|
-| 0 (Female) | ~0.085 | ~0.025 | ~0.559 |
-| 1 (Male)   | ~0.256 | ~0.097 | ~0.621 |
-
-Interpretation:
-
-- Males are **more than 3×** as likely to be predicted as `>50K` compared to females (higher selection rate).  
-- Males also have a higher false positive rate and slightly higher true positive rate.  
-- This reveals **disparate impact** and potential bias in favour of male predictions.
-
-A bar chart is used to visualize these metrics by group.
-
----
-
-## 🔍 Explainability
-
-### SHAP (Global & Local)
-
-We use **`shap.LinearExplainer`** on the trained Logistic Regression model.
-
-- **Global (summary bar plot)** shows the most influential features overall, including:  
-  - `marital-status_Married-civ-spouse`  
-  - `capital-gain`  
-  - `education-num`  
-  - `sex_Male`  
-  - `age`  
-  - `workclass_Private`  
-
-- **Global (beeswarm plot)** reveals how high vs low feature values push predictions towards `>50K` or `<=50K`.
-
-- **Local (waterfall plot)** explains individual decisions by showing how each feature increases or decreases the log-odds of predicting `>50K` for a single person.
-
-### LIME (Local Explanations)
-
-We use **`LimeTabularExplainer`**:
-
-- Creates a locally linear surrogate model around a single instance.  
-- Returns feature contributions that push the prediction towards `<=50K` or `>50K` with interpretable rules, e.g.:
-  - `capital-gain <= threshold` → supports `<=50K`  
-  - `marital-status_Married-civ-spouse` and certain occupations → support `>50K`  
-
-
-```bash
-pip install fairlearn shap lime
+Results above were checked against saved notebook outputs; the analysis was not rerun in this documentation update.
