@@ -1,8 +1,12 @@
 # Adetola Ridwat Odulaja
 
-### Business Analysis · Data Analytics · Responsible AI
+### Business Analysis · Automation · Workflow Analysis
 
-I connect business needs with data, practical automation, and clear decisions. My professional focus is **simplification, automation, and data integrity**. This portfolio presents the technical foundation I developed through my Data Analytics & Artificial Intelligence diploma at Willis College, Ottawa.
+## Professional summary
+
+I am a CBAP-certified Business Analyst and Salesforce Certified Business Analyst with a focus on automation, workflow analysis, and data integrity. I analyze business processes, identify bottlenecks and manual effort, translate stakeholder needs into clear requirements, and support practical improvements across reporting and CRM workflows. My experience combines operational analysis and stakeholder collaboration with a technical foundation in Python, SQL, Excel, Power BI, Tableau, and artificial intelligence. I aim to make workflows simpler, information more reliable, and decisions easier to act on.
+
+This portfolio presents the technical foundation I developed through my Data Analytics & Artificial Intelligence diploma at Willis College, Ottawa, alongside a structure for future independent automation and AI projects.
 
 **CBAP** · **Salesforce Certified Business Analyst** · **Data Analytics & AI diploma graduate**
 
