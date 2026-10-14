@@ -1,5 +1,9 @@
 # Responsible AI: Fairness & Explainability in Income Classification
 
+> **Looking for my full portfolio?** [Start here: Business Analysis, Automation & Data Analytics Portfolio](PORTFOLIO.md)
+>
+> CBAP · Salesforce Certified Business Analyst · Workflow Analysis · Simplification, Automation & Data Integrity
+
 **Adetola Ridwat Odulaja** · Academic responsible AI project
 
 Evaluate an income classifier beyond aggregate accuracy by examining group-level outcomes and explaining individual predictions.
