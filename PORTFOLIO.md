@@ -4,15 +4,29 @@
 
 ## Professional summary
 
-I am a CBAP-certified Business Analyst and Salesforce Certified Business Analyst with a focus on automation, workflow analysis, and data integrity. I analyze business processes, identify bottlenecks and manual effort, translate stakeholder needs into clear requirements, and support practical improvements across reporting and CRM workflows. My experience combines operational analysis and stakeholder collaboration with a technical foundation in Python, SQL, Excel, Power BI, Tableau, and artificial intelligence. I aim to make workflows simpler, information more reliable, and decisions easier to act on.
+I am a CBAP-certified Business Analyst and Salesforce Certified Business Analyst working at the intersection of business processes, data, and technology. In Sales Effectiveness Operations and Business Analysis, I translate stakeholder needs into requirements, define business rules, analyze workflows, and validate reporting and CRM data. My focus is simplification, automation, and data integrity: reducing manual effort, clarifying how work moves through systems, and making information reliable enough to guide decisions.
+
+My Data Analytics & Artificial Intelligence diploma from Willis College, Ottawa, strengthens this practice with hands-on academic work in Python, data preparation, machine learning, model evaluation, and responsible AI. I combine this technical foundation with operational analysis and stakeholder collaboration to connect a business problem to a practical, testable solution.
 
 This portfolio presents the technical foundation I developed through my Data Analytics & Artificial Intelligence diploma at Willis College, Ottawa, alongside a structure for future independent automation and AI projects.
 
 **CBAP** · **Salesforce Certified Business Analyst** · **Data Analytics & AI diploma graduate**
 
-[Featured work](#featured-work) · [Project collection](#project-collection) · [Future projects](#future-projects)
+[Professional summary](#professional-summary) · [Workflow focus](#business-analysis--workflow-focus) · [Featured work](#featured-work) · [Project collection](#project-collection)
 
 ---
+
+## Business analysis & workflow focus
+
+My professional practice centres on:
+
+- **Workflow analysis:** examine current processes, handoffs, bottlenecks, and opportunities to reduce manual effort.
+- **Requirements and business rules:** turn stakeholder needs into clear system behaviour and acceptance criteria.
+- **Data integrity:** reconcile information, validate KPI logic, and investigate inconsistencies before reporting.
+- **Automation:** identify repeatable steps and define the rules, controls, and human review a solution needs.
+- **Stakeholder communication:** explain decisions, findings, and tradeoffs in language people can act on.
+
+The school projects below demonstrate the technical foundation supporting this work. Each project identifies its own implemented scope and evidence.
 
 ## What I bring
 
@@ -141,6 +155,8 @@ These are academic projects and learning prototypes. Results identified as “sa
 Each project explains its question, method or available materials, evidence, limitations, and next improvements. Business relevance describes transferable skills rather than claiming commercial impact.
 
 ## Future projects
+
+**RequestFlow AI — in development:** an independent request-intake and workflow project being designed around business rules, routing, prioritization, and human approval. It will join the showcase when its implementation and validation are available.
 
 Completed independent projects will be added to the featured collection with their own problem statement, requirements, implementation, validation, and demonstration. Workflow automation and AI applications can build on the analytics and responsible-AI foundation shown here.
 
