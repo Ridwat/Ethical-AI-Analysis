@@ -1,6 +1,11 @@
-# Adetola Ridwat Odulaja
+# Adetola Odulaja
 
-### Business Analysis · Automation · Workflow Analysis
+### Business Analyst | Workflow Analysis & Automation
+
+**Simplification · Automation · Data Integrity**  
+Ottawa, Canada
+
+---
 
 ## Professional summary
 
@@ -8,11 +13,9 @@ I am a CBAP-certified Business Analyst and Salesforce Certified Business Analyst
 
 My Data Analytics & Artificial Intelligence diploma from Willis College, Ottawa, strengthens this practice with hands-on academic work in Python, data preparation, machine learning, model evaluation, and responsible AI. I combine this technical foundation with operational analysis and stakeholder collaboration to connect a business problem to a practical, testable solution.
 
-This portfolio presents the technical foundation I developed through my Data Analytics & Artificial Intelligence diploma at Willis College, Ottawa, alongside a structure for future independent automation and AI projects.
-
 **CBAP** · **Salesforce Certified Business Analyst** · **Data Analytics & AI diploma graduate**
 
-[Professional summary](#professional-summary) · [Workflow focus](#business-analysis--workflow-focus) · [Featured work](#featured-work) · [Project collection](#project-collection)
+[About me](#professional-summary) · [Workflow focus](#business-analysis--workflow-focus) · [Featured projects](#featured-work) · [All projects](#project-collection) · [In development](#projects-in-development)
 
 ---
 
@@ -40,6 +43,20 @@ The school projects below demonstrate the technical foundation supporting this w
 | Business communication | Connecting methods and findings to their practical implications |
 
 My broader professional toolkit includes Python, SQL, Excel, Power BI, Tableau, and CRM analysis. Individual project pages identify the tools actually used in that work.
+
+## Projects in development
+
+### RequestFlow AI
+
+**Status: In development · Independent workflow automation project**
+
+An AI-enabled request-intake and workflow assistant being designed around business rules, routing, prioritization, and human approval.
+
+**Focus:** Requirements · Workflow design · Transparency · Accountability
+
+This project will join the completed showcase when its implementation, demo, and validation are available.
+
+---
 
 ## Featured work
 
@@ -154,15 +171,17 @@ These are academic projects and learning prototypes. Results identified as “sa
 
 Each project explains its question, method or available materials, evidence, limitations, and next improvements. Business relevance describes transferable skills rather than claiming commercial impact.
 
-## Future projects
 
-**RequestFlow AI — in development:** an independent request-intake and workflow project being designed around business rules, routing, prioritization, and human approval. It will join the showcase when its implementation and validation are available.
+<details>
+<summary><strong>Portfolio resources</strong></summary>
 
-Completed independent projects will be added to the featured collection with their own problem statement, requirements, implementation, validation, and demonstration. Workflow automation and AI applications can build on the analytics and responsible-AI foundation shown here.
+The maintenance guide explains how to add future projects. The template provides a consistent outline for documenting each case study.
 
 [Project case-study template](https://github.com/Ridwat/Ethical-AI-Analysis/blob/main/PROJECT_TEMPLATE.md) · [Portfolio maintenance guide](https://github.com/Ridwat/Ethical-AI-Analysis/blob/main/PORTFOLIO_GUIDE.md)
 
+</details>
+
 ---
 
-**Adetola Ridwat Odulaja** · Ottawa, Canada  
+**Adetola Odulaja** · Ottawa, Canada  
 [GitHub repositories](https://github.com/Ridwat?tab=repositories)
